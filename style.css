@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+:root{
+    --light-color : #e3f2fd;
+    --dark-color : #000;
+    --sunflower : #E8DE2A
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Unbounded', cursive;
+}
+
+.navbar {
+    background-color: var(--light-color);
+}
+
+.search-btn{
+    background: var(--dark-color);
+    color: var(--light-color);
+    outline: none;
+    border: 1px solid var(--light-color);
+}
+.search-btn:hover{
+    border: 1px solid var(--dark-color);
+}
+.navbar-nav >ul >li >i{
+    margin-inline: 5px;
+}
+.card-color-top{
+    height: 200px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--sunflower);
+    
+}
+.mycard{
+    display: flex;
+    flex-direction: column;
+    /* width: auto; */
+    
+}
+.mybtn{
+    width: auto;
+    height: auto;
+    margin: 20px auto;
+    border: none;
+    /* color: currentcolor; */
+    padding: revert;
+    border-radius: 15px;
+    background-color: var(--sunflower);
+}
+.display_color_code{
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid var(--dark-color);
+}
+.display_color_code::after{
+    content: '';
+    mix-blend-mode: difference;
+    color: rgb(0, 0 , 0);
+    padding: 5px;
+    border-radius: 50px;
+}
+.sunflower{
+    font-size: 50px;
+    color: var(--sunflower);
+    background-color: var(--dark-color);
+}
