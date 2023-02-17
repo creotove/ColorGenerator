@@ -57,6 +57,10 @@ randomGenerate.addEventListener("click", colorgenerate);
 let clipboardCopy = document.getElementById('clipboardCopy');
 clipboardCopy.addEventListener("click", (e) => {
     myColor = color_display.innerText
+
+  myColor.select();
+  myColor.setSelectionRange(0, 99999);
+    
     navigator.clipboard.writeText(myColor);
     alert(`"${myColor} Copied to Clipboard"`)
     clipboardCopy.style.backgroundColor = myColor
